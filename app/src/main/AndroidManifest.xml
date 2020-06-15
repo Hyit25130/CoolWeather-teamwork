@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.coolweather">
-    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
-    <application
+
+    <uses-permission android:name="android.permission.INTERNET" />
+   <application
         android:name="org.litepal.LitePalApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -11,10 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
+        <activity android:name=".WeatherActivity"></activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
+<!--                ssss-->
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
